@@ -1,7 +1,7 @@
 #                               GIT_COMMANDS
 
 These Document is to get a brief idea about using git command line interface
-for  a more practical explanation You can Watch my Video on that [link](https://youtube.com/).
+for  a more Practical explanation You can Watch my Video on that [link](https://youtube.com/).
 
 
 ## Content 
