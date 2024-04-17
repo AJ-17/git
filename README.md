@@ -3,12 +3,15 @@
 These Document is to get a brief idea about using git command line interface
 for  a more Practical explanation You can Watch my Video on that [link](https://youtube.com/).
 
+Using git we can easy excess the data files in a group or individualy and work
+on to a project.
 
 ## Content 
 
 - [Installing Git](#instalation)
 - [Configuration/setup](#setup)
 - [DATA FLOW STRUCTURE](#stages)
+
 
 ## Instalation
 ###  Windows
@@ -42,5 +45,29 @@ There are different steps to make the file handling between a group safer and se
 <img src='https://res.cloudinary.com/practicaldev/image/fetch/s--M_fHUEqA--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/128hsgntnsu9bww0y8sz.png'>
 
 First when we delete modify or make a file it is untracked by git but to track
-it we send it to the stack and then we commint all the thing which are in 
+it we send it to the stag and then we commint all the thing which are in 
 stack and are being tracked.
+Once it is ready in stack we push it on to the site.
+
+
+To add a file to stag or track it 
+
+```bash
+git add file_name
+```
+
+To add all the files in stag
+
+```bash
+got add -A
+```
+
+To remove a file from stag and harddisk
+
+```bash
+git rm file_name
+```
+
+```bash
+git rm -c
+```
