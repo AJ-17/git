@@ -21,5 +21,3 @@ sudo apt-get install git
 ```bash
 brew install git
 ```
-
-Hellochange
