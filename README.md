@@ -99,3 +99,12 @@ For a short result we can use
 ```bash
 git status -s
 ```
+If you want to backup the files from the previous commit we can use 
+```
+git checkout filename
+```
+for complete match use
+```
+git checkout -f
+```
+these is like a backup newly made files not in the commeted area won't be affected 
