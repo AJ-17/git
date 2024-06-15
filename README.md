@@ -116,9 +116,18 @@ git log
 ```
 to get specific number of log like last 5 log use
 use -p only if you need a detailed desprition of what changes are made 
+To get a moderate Log we use --stat flag 
+The --pretty=oneline flag shows only the commits that are done in one line 
+--pretty=short adds who did the commit
+--pretty=full adds who is the author,who did commit
+--since=2.days or =2.years or =2.months or 2.hours or 2.weeks or 2.minute is for getting the log of last 2 days or year or month etc      
+--until=1.day can specify the end day like since is start
+-- eg git log --since=2024-06-10 --until=2024-06-12
 ```
 git log -p -5
 ```
+
+
 To see the differece betweent the modified file and staged file use diff ,if we don't use filename then all the diff will be displayed
 ```
 git diff filename
@@ -147,5 +156,15 @@ or use these to change the folder name
 
 ```
 git clone url.git new_name
+```
+
+when we rename a commited file the git assume that a new file is created and the privous name file is deleted to tell git that its renamed we use .
+although its not a proper way git add . will act like git add -A or git add --a
+```
+git add .
+```
+the proper way to rename a file is 
+```
+git mv a.txt 1.txt
 ```
 
