@@ -62,6 +62,7 @@ To add all the files in stag
 got add -A
 ```
 
+
 To remove a file from stag and harddisk
 
 ```bash
@@ -96,6 +97,7 @@ To get info about which file is in the stag & which is not
 git status
 ```
 For a short result we can use 
+?? mean untracked A mean staged AM mean modified  AD mean deleted 
 ```bash
 git status -s
 ```
