@@ -106,20 +106,19 @@ If you want to backup the files from the previous commit we can use
 git checkout filename
 ```
 for complete match use
+these is like a backup newly made files not in the commeted area won't be affected 
 ```
 git checkout -f
-```
-these is like a backup newly made files not in the commeted area won't be affected 
-                                                                                                                                                                           
-                                                                                                                                                                           
+```                                                                                                                                                                       
 To get the logs of what things are done and who have done it use 
 ```
 git log
 ```
 to get specific number of log like last 5 log use
+use -p only if you need a detailed desprition of what changes are made 
 ```
 git log -p -5
 ```
-use -p only if you need a detailed desprition of what changes are made 
+
 
 
