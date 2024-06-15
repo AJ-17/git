@@ -110,9 +110,8 @@ for complete match use
 git checkout -f
 ```
 these is like a backup newly made files not in the commeted area won't be affected 
-
-
-    
+                                                                                                                                                                           
+                                                                                                                                                                           
 To get the logs of what things are done and who have done it use 
 ```
 git log
