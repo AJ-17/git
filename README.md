@@ -64,7 +64,7 @@ got add -A
 
 
 To remove a file from stag and harddisk
-
+when we use rm a if the file is in the commited area (or say modefied)then  a delete tag is generated in the stage to be commited 
 ```bash
 git rm file_name
 ```
@@ -106,7 +106,7 @@ If you want to backup the files from the previous commit we can use
 git checkout filename
 ```
 for complete match use
-these is like a backup newly made files not in the commeted area won't be affected 
+these is like a backup. newly made files not in the commeted area won't be affected if they are not staged .if they are staged then will be deleted  
 ```
 git checkout -f
 ```                                                                                                                                                                       
@@ -119,6 +119,33 @@ use -p only if you need a detailed desprition of what changes are made
 ```
 git log -p -5
 ```
+To see the differece betweent the modified file and staged file use diff ,if we don't use filename then all the diff will be displayed
+```
+git diff filename
+```
 
+To see difference between the commited and staging area use 
+```
+git diff --staged
+```
+To remove a file from the staging area without adding a delete tag of the file to be commited we use 
+if the file is not stagged and we use  ```git restore filename``` then the file will be restored from commit
+```
+git restore --staged filename
+```
+if there any any files which we don't want to be tracked when we use git add -A  then we can make a .gitignore file and add its name in it .even if there is a file with that name inside a folder it will be ignored . even if the folder name is same as the file name compete folder will be ignored
+if we add a use /filename in the gitignore file then only the files in the main directory will be ignored
+if we want all the files will extension .jpg to be ignored then we can use *.jpg
+by using * we can form any regix acc to the needs
 
+To get a github file from github you can use the command 
+these folders are already Initialized.so we can use git commands
+```
+git clone url.git 
+```
+or use these to change the folder name
+
+```
+git clone url.git new_name
+```
 
