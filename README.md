@@ -186,7 +186,8 @@ To add a new url use the below command
 ```
 git remote add origin url
 ```
-the url will be know by the name origin 
+the url will be know by the name origin.                                                                                      
+
 **Step 2**
 Making a ssh-key
 these will create two files id_rsa(private key) id_rsa.pub inside the folder path that you will give
