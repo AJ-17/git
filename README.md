@@ -168,3 +168,57 @@ the proper way to rename a file is
 git mv a.txt 1.txt
 ```
 
+To do a new commit in the privous commit iself we use 
+```
+git commit --amend
+```
+
+##Connecting to the github repo
+
+**Step 1**
+Make a repositry public/private in github & copy the ssh url 
+The below commad shows all the url's names only saved in our git eg
+```
+git remote 
+```
+a -v flag added to it will show the url + url name
+To add a new url use the below command
+```
+git remote add origin url
+```
+the url will be know by the name origin 
+**Step 2**
+Making a ssh-key
+these will create two files id_rsa(private key) id_rsa.pub inside the folder path that you will give
+```
+ssh-keygen -t rsa -b 4096 -C "example@example.com"
+```
+-t rsa: Specifies the type of key to create. RSA is one of the most common types.
+-b 4096: Specifies the number of bits in the key. 4096 bits is a strong key size.
+
+```
+eval "$(ssh-agent -s)"
+```
+ssh-agent -s: This command starts the SSH agent, a program that runs in the background and manages your SSH keys. The -s flag outputs commands to set environment variables.
+
+eval: This command executes the output of ssh-agent -s in the current shell. Essentially, it sets the environment variables for the SSH agent so that it can be used in your current session.
+
+the below commad gives the private key to the ssh agent to handel it .
+```
+ssh-add ~/.ssh/id_rsa
+```
+**Step 3**
+Now copy the content in id_rsa.pub & add a ssh key in your github repo setting
+
+**Step 4**
+Now you can push and pull in the repo
+```
+git push -u origin master
+```
+master is the branch name will discuss below later
+
+```
+git pull origin master
+```
+       
+Done 
