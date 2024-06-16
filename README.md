@@ -173,7 +173,7 @@ To do a new commit in the privous commit iself we use
 git commit --amend
 ```
 
-##Connecting to the github repo
+## Connecting to the github repo
 
 **Step 1**
 Make a repositry public/private in github & copy the ssh url 
