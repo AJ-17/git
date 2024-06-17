@@ -223,3 +223,32 @@ git pull origin master
 ```
        
 Done 
+
+## Branch
+***Branches are like working on the same project in different ways***
+Making a new brach other then master
+```
+git checkout -b brachname
+```
+switch between branches when  the stack is empty and clean it's considered a good practice to prevent errors
+```
+git checkout branchname
+```
+To see all and current brach
+```
+git branch 
+```
+To delete a brach use 
+```
+git branch --delete q1
+```
+To delete without merging it with master branch use
+```
+git branch -D --delete q1
+```
+
+To merge a branch in current branch 
+when we made the branch at that time all the things were same in both and after that somechanges were made in both branchs when we merge them at that time any new change is accepted without any problem if it was changed only in one brach if its changed in both brach then a merge conflict occur vs code helps as to tackle it. to see which changes we want.
+```
+ git merge <branch name to be merge>
+```
