@@ -238,17 +238,41 @@ To see all and current brach
 ```
 git branch 
 ```
-To delete a brach use 
+To delete a already merged brach use 
 ```
 git branch --delete q1
 ```
+or 
+```
+git branch -d q1
+```
 To delete without merging it with master branch use
 ```
-git branch -D --delete q1
+git branch -D q1
 ```
 
 To merge a branch in current branch 
 when we made the branch at that time all the things were same in both and after that somechanges were made in both branchs when we merge them at that time any new change is accepted without any problem if it was changed only in one brach if its changed in both brach then a merge conflict occur vs code helps as to tackle it. to see which changes we want.
 ```
  git merge <branch name to be merge>
+```
+To get the last log of all the branchs last commit use
+```
+git branch -v
+```
+
+To see all the merged branchs use 
+```
+git branch --merged
+```
+To see non merged
+```
+git branch --no-merged
+```
+
+
+NOTICE :- when we commit a change the commit points to the privous and the previous point on its previous in these way the commits are just changes from the first commit
+
+```
+----------------------------------------------------------------------------------END-------------------------------------------------------------------------------------
 ```
